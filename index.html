@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
@@ -13,7 +13,7 @@
      <!--  <div class="container"> -->
         <nav class="main-navigation">
       	  <a class="main-header-logo">
-      	    <img src="img/logo.svg" width="138" height="70" alt="Логотип «Sedona»"> 
+      	    <img src="img/logo.png" width="138" height="70" alt="Логотип «Sedona»"> 
       	  </a> 
           <!-- <div class="main-navigation-wrapper"> -->
             <ul class="site-navigation">
@@ -24,9 +24,11 @@
             </ul>
          <!--  </div> -->
         </nav>
-
+        <div class="header-background">
+          <img src="img/head-bg.jpg" width="1200" height="773" alt="Фото Хедера">
+        </div>
         <div class="header-footer">
-          <img src="img/head-footer.png" width="1200" height="57" alt="Картинка Хедера">
+          <img src="img/shape-1.png" width="1200" height="57" alt="Нижнияя окантовка фото">
           <h3>Седона — небольшой городок в аризоне, заслуживающий большего!</h3> 
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>   
         </div>
@@ -45,7 +47,7 @@
         </aside>
 
         <div class="feature-1-bg">
-          <img src="" width="" height="" alt="">
+          <img src="img/Layer-10.jpg" width="800" height="256" alt="Фото городка">
         </div>
 
         <ul class="features-list">
@@ -68,7 +70,7 @@
         <h2 class="visually-hidden">Преимущества 2</h2>
 
         <div class="feature-2-bg">
-          <img src="" width=" height="" alt="">
+          <img src="img/Layer-5.jpg" width="800" height="256" alt="Фото каньона">
         </div>
 
         <aside class="city-info-2">
@@ -103,6 +105,9 @@
 
       <section class="map-block">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="map-image">
+          <img src="img/map.png" width="1200" height="593" alt="Карта">
+        </div>
       </section>
     </main>
 
@@ -123,7 +128,31 @@
 
     <section class="modal modal-search">
       <h3>Поиск гостиницы в Седоне</h3>
-      <!-- Здесь будет форма -->
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="search-item">
+            <label for="checkin">Дата заезда:</label>
+            <input class="date-input" type="text" name="checkin" id="checkin"  value="24 апреля 2017">
+            <button class="calendar"></button>
+          </p>
+          <p class="search-item">
+            <label for="checkout">Дата выезда:</label>
+            <input class="date-input" type="text" name="checkout" id="checkout" value="4 июля 2017">
+            <button class="calendar"></button>
+          </p>
+          <p class="search-item">
+            <label for="adults">Взрослые:</label>
+            <button class="minus-outer" type="submit" id="minusAdult"><span class="modal-minus"></span></button>
+            <input class="people-number" type="text" name="adults" id="adults" pattern="[0-9]*" value="2" min="0">
+            <button class="plus-outer" type="submit" id="plusAdult"><span class="modal-plus"></span></button>
+          </p>
+          <p class="search-item">
+            <label for="children">Дети:</label>
+            <button class="minus-outer" type="submit" id="minusChild"><span class="modal-minus"></span></button>
+            <input class="people-number" type="text" name="children" id="children" pattern="[0-9]*" value="0" min="0">
+            <button class="plus-outer" type="submit" id="plusChild"><span class="modal-plus"></span></button>
+          </p>
+          <a class="modal-submit" href="#">Найти</a>
+      </form>  
     </section>
 
   </body>
