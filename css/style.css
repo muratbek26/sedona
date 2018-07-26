@@ -7,6 +7,7 @@ html {
     padding: 0;
 }*/
 
+
 body {
 	margin: 0;
 	padding: 0;
@@ -19,17 +20,12 @@ body {
   background-color: #ffffff;
 }
 
-/*.inner-page {
+/*.catalog-page {
   color: #000000;
   background-color: #f9f6f3;
   background-image: url("../img/catalog-bg.jpg");
   background-position: 0 0;
   background-repeat: repeat;  
-}
-
-.inner-page .main-header {
-  margin-bottom: 50px;
-  background-color: #000000;
 }*/
 
 a {
@@ -48,7 +44,8 @@ a {
 
 /*=============Хедер==============*/
 
-.main-header {
+.main-header,
+.catalog-header {
   width: 1280px;
   min-height: 750px;
   background-color: #f2f2f2;
@@ -67,7 +64,8 @@ a {
   font-weight: bold;
   background-color: #ffffff;
   position: relative;
-  box-shadow: 0px 0px 15px rgba(0, 1, 1, 0.15);
+  box-shadow:  0px -10px 30px -1px rgba(0, 1, 1, 0.15), 
+               0px 0px 30px -1px rgba(0, 1, 1, 0.15);
 }
 
 .main-header-logo {
@@ -154,6 +152,8 @@ a {
   height: 508px;
   margin: 0;
   padding: 0;
+  box-shadow:  0px -10px 30px -1px rgba(0, 1, 1, 0.15), 
+               0px 0px 30px -1px rgba(0, 1, 1, 0.15);
 }
 
 .header-footer-img {
@@ -171,6 +171,8 @@ a {
   margin: 0;
   padding: 0;
   padding-bottom: 29px;
+  box-shadow:  0px -10px 30px -1px rgba(0, 1, 1, 0.15), 
+               0px 0px 30px -1px rgba(0, 1, 1, 0.15);
 }
   
 .header-footer h3,
@@ -215,13 +217,14 @@ a {
 .city-info-1,
 .city-info-2 {
   width: 400px;
- /* height: 256px;*/
+  height: 256px;
   font-weight: normal;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
   margin: 0;
   padding: 0;
+  box-shadow: -12px 2px 30px -2px rgba(0, 1, 1, 0.15);
 }
 
 .city-info-1 h3 {
@@ -247,6 +250,7 @@ a {
 .feature-1-bg {
   width: 800px;
   height: 256px;
+  box-shadow:  12px 2px 30px -2px rgba(0, 1, 1, 0.15);
 }
 
 .features-second {
@@ -257,6 +261,11 @@ a {
   padding-left: 40px;
   padding-right: 40px;
   margin-left: 35px;
+}
+
+.features-list {
+  box-shadow:  0px -10px 30px -1px rgba(0, 1, 1, 0.15), 
+               0px 0px 30px -1px rgba(0, 1, 1, 0.15);
 }
 
 .features-1 .features-list {
@@ -353,6 +362,10 @@ a {
   text-align: center;
 } 
 
+.city-info-2 {
+  box-shadow: 12px 2px 30px -2px rgba(0, 1, 1, 0.15);
+}
+
 .city-info-2 h3 {
   display: block;
   width: 151px;
@@ -394,6 +407,7 @@ a {
   padding: 0;
   background-color: #ffffff;
   list-style: none;
+  background-color: #eeeeee;
 }
 
 .features-2 .feature-item:first-child {
@@ -442,6 +456,14 @@ a {
   margin-bottom: 20px;
 }
 
+.feature-2-bg {
+  box-shadow: -12px 2px 30px -2px rgba(0, 1, 1, 0.15);
+}
+
+/*.border-shadow {
+ box-shadow: 0px 20px 30px -1px rgba(0, 1, 1, 0.15);
+}*/
+
 /*===============Карта и модальное окно================*/
 
 .modal-search {
@@ -460,7 +482,11 @@ a {
   min-height: 290px;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #ffffff;             
+}
+
+.border-shadow {
+  box-shadow:  0px 0px 30px 0px rgba(0, 1, 1, 0.15);
 }
 
 .search-info h2 {
@@ -542,7 +568,7 @@ a {
   right: 0;
   padding: 50px;
   background-color: #ffffff;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  /*box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);*/
 }
  
 .search-form-row-1 {
@@ -777,6 +803,7 @@ a {
   height: 473px;
   margin: 0;
   padding: 0;
+  box-shadow:  0px 0px 20px 0px rgba(0, 1, 1, 0.15);
  }  
 
 /*================Футер===============*/
@@ -799,6 +826,7 @@ a {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  box-shadow:  0px 0px 20px 0px rgba(0, 1, 1, 0.15);
 }
 
  .footer-block  h3 {
