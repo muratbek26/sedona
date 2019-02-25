@@ -11,7 +11,7 @@
 
   <body>
     <header class="main-header container">
-      <nav class="main-navigation">            
+      <nav class="main-navigation container">            
         <ul class="site-navigation container">
           <li class="index-nav-current"><a href="index.html">информация</a></li>
           <li><a href="media.html">фото и видео</a></li>
@@ -22,15 +22,15 @@
           <li><a href="catalog.html">гостиницы</a></li>
         </ul>
       </nav>
-      <div class="welcome-icon">
+      <div class="welcome-icon container">
         <p class="welcome-image"></p>
         <p class="welcome-line-left"></p>
         <p class="welcome-line-right"></p>
       </div>
-      <div class="header-background">
+      <div class="header-background container">
         <img src="img/head-bg.jpg" width="1200" height="508" alt="Фото Хедера">
       </div>  
-      <p class="header-footer-img"></p>
+      <p class="header-footer-img container"></p>
       <div class="header-footer">
         <h3>Седона — небольшой городок в аризоне, заслуживающий большего!</h3> 
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>   
@@ -39,7 +39,7 @@
     
     <main class="main-container container">
       <h1 class="visually-hidden">«Sedona»</h1>
-    
+      
       <section class="features-1">
         <h2 class="visually-hidden">Преимущества 1</h2>
         <div class="features-first container">
@@ -69,7 +69,7 @@
           </ul>
         </div>
       </section>
-
+  
       <section class="features-2">
         <h2 class="visually-hidden">Преимущества 2</h2>
         <div class="features-third container">
@@ -102,17 +102,19 @@
           </ul>
         </div>
       </section> 
+      
 
       <section class="modal-search">
-        <div class="border-shadow">
-        <div class="search-info container">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
-        </div>
+        <!-- <div class="border-shadow"> -->
+          <div class="search-info container">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
+        <!-- </div> -->
 
         <div class="search-form-wrapper container">
           <button class="btn btn-large" type="button" name="search-open">Поиск гостиницы в Седоне</button>
+          <div class="animation-form">
           <form class="search-form" action="hotel-seach" method="get">
             <div class="search-form-row-1">
               <label for="check-in">Дата заезда:</label>
@@ -145,6 +147,7 @@
             <button class="btn btn-medium" type="submit" name="search-submit">Найти</button>
           </form>
         </div>
+        </div>
         <section class="map-block">
           <div class="map-block-info">
             <h2 class="visually-hidden">Как добраться до Седоны</h2>
@@ -152,7 +155,6 @@
           </div>
         </section>
       </section>
-    
     </main>
 
    <footer class="main-footer">
@@ -170,6 +172,8 @@
         </a>
       </p>
     </div>
-    </footer> 
+    </footer>
+
+  <!-- </div> -->
   </body>
 </html>

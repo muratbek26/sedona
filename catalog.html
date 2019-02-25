@@ -22,32 +22,134 @@
           <li class="catalog-nav-current"><a class="active" href="catalog.html">гостиницы</a></li>
         </ul>
       </nav>
-     
+      
+      <section class="filters container">
+       
+        <form method="get" action="https://echo.htmlacademy.ru">
+
+          <div class="filter-features-1">
+            <h3>Инфраструктура:</h3>
+            <ul class="filter-option-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="waterpool" id="filter-waterpool" checked>
+                <label for="filter-waterpool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>                
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" disabled>
+                <label for="filter-wi-fi">Wi-fi</label>                  
+              </li>
+            </ul>
+          </div>
+        
+          <div class="filter-features-2">
+            <h3>Тип жилья:</h3>
+            <ul class="filter-option-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>                
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked disabled>
+                <label for="filter-apartment">Апартаменты</label>                 
+              </li>
+            </ul>
+          </div>
+        
+      
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (p):</legend>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <label class="min-price">от<input name="min-price" type="text" value="0"></label> 
+                  <span>|</span>
+                  <label class="max-price">до<input name="max-price" type="text" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+              <button class="filter-item-btn btn-filter" type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
     </header>
-    
-   
 
     <main class="catalog-container container">
       <h1 class="visually-hidden">«Sedona»</h1>
-     
-     
+
+      <section class="sorting container">
+        <h2>Найдено: 3</h2>
+        <h3>Сортировка:</h3>
+        <ul class="sorting-list">
+          <li class="sorting-by-price sorting-list-current">
+            <a href="by-price.html">По цене</a>
+          </li>
+          <li class="sorting-by-type">
+            <a href="by-type.html">По типу</a>
+          </li>
+          <li class="sorting-by-name">
+            <a href="by-name.html">По рейтингу</a>
+          </li>
+        </ul>
+        <div class="icons"> 
+          <p class="icon-up"></p>
+          <p class="icon-down"></p>
+        </div> 
+      </section>
+
+      <section class="catalog-list-1 container">
+        <div class="amara-resort-img">
+          <img src="img/layer 21.jpg" width="135" height="90" alt="AMARA RESORT">
+        </div>
+        <div class="hotel-list-1">
+          <h2>amara resort & spa</h2>
+          <span class="hotel-amara">гостиница</span>
+          <span class="amara-hotel-price">от 4000 Р.</span>
+        
+          <div class="amara-info">
+            <span class="amara-details"><a href="amara-details.html">подробнее</a></span>
+            <span class="amara-booking"><a href="amara-booking.html">забронировать</a></span>
+          </div>
+        </div>
+
+        <div class="amara-stars"> 
+          <p class="amara-stars-1"></p>
+          <p class="amara-stars-2"></p>
+          <p class="amara-stars-3"></p>
+          <p class="amara-stars-4"></p>
+        </div> 
+         <p class="amara-rating">рейтинг: 8,5</p>
+      </section>
+
     </main>
 
-   <footer class="main-footer">
-    <div class="footer-block container">
-      <h3>#Visitsedona</h3>
-      <ul class="footer-socials">
-        <li><a class="social-button social-btn-tw" href="https://twitter.com"><span class="visually-hidden">twitter</span></a></li>
-        <li><a class="social-button social-btn-fb" href="https://www.facebook.com"><span class="visually-hidden">facebook</span></a></li>
-        <li><a class="social-button social-btn-yt" href="https://www.youtube.com"><span class="visually-hidden">youtube</span></a></li>
-      </ul>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru"> 
-          <img src="img/logo_name.png" width="115" height="41" alt="Логотип HTML Academy">
-        </a>
-      </p>
-    </div>
-    </footer> 
+    <!-- <footer class="main-footer">
+      <div class="footer-block container">
+        <h3>#Visitsedona</h3>
+        <ul class="footer-socials">
+          <li><a class="social-button social-btn-tw" href="https://twitter.com"><span class="visually-hidden">twitter</span></a></li>
+          <li><a class="social-button social-btn-fb" href="https://www.facebook.com"><span class="visually-hidden">facebook</span></a></li>
+          <li><a class="social-button social-btn-yt" href="https://www.youtube.com"><span class="visually-hidden">youtube</span></a></li>
+        </ul>
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="button" href="https://htmlacademy.ru"> 
+            <img src="img/logo_name.png" width="115" height="41" alt="Логотип HTML Academy">
+          </a>
+        </p>
+      </div>
+    </footer>  -->
   </body>
 </html>
