@@ -21,14 +21,6 @@ body {
  }
 
  
-/*.catalog-page {
-  color: #000000;
-  background-color: #f9f6f3;
-  background-image: url("../img/catalog-bg.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;  
-}*/
-
 a {
   text-decoration: none;
 }
@@ -166,7 +158,7 @@ a {
   
 .header-footer {
   width: 1200px;
-  min-height: 187px;
+  height: 187px;
   background-color: #ffffff;
   margin: 0 auto;
   padding-bottom: 29px;
@@ -181,17 +173,20 @@ a {
 }
   
 .header-footer h3 {
- width: 480px;
+ width: 482px;
  margin-left: 356px;
- font-weight: bold;
+ /*font-weight: bold;*/
  font-size: 19px;
  line-height: 26px;
  color: #000000;
  padding-top: 60px;
  margin-bottom: 28px; 
- letter-spacing: 1px;
 }  
 
+.header-footer p {
+ font-size: 13px;
+ padding-left: 10px;
+}
   
 /*==============Особенности============*/
 
@@ -222,27 +217,26 @@ a {
   background-color: #81b3d2;
   margin: 0;
   padding: 0;
- /* box-shadow: -12px 2px 30px -2px rgba(0, 1, 1, 0.15); */
 }
 
 .city-info-1 h3 {
   display: block;
   width: 150px;
   text-align: center;
-  margin-left: 125px;
-  margin-top: 47px;
-  font-weight: bold;
-  font-size: 21px;
+  margin-left: 126px;
+  margin-top: 48px;
+  font-size: 19px;
   line-height: 21px;
 }
 
 .city-info-1 p + p {
   display: block;
-  width: 295px;
-  margin-left: 55px;
+  width: 310px;
+  margin-left: 45px;
   margin-top: 19px;
   line-height: 21px;
-  letter-spacing: 0.5px;
+  font-size: 13px;
+  /*letter-spacing: 0.5px;*/
 }
 
 .feature-1-bg {
@@ -261,17 +255,12 @@ a {
   margin-left: 35px;
 }
 
-.features-list {
-  /* box-shadow:  0px -10px 30px -1px rgba(0, 1, 1, 0.15), 
-               0px 0px 30px -1px rgba(0, 1, 1, 0.15); */
-}
-
 .features-1 .features-list {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1200px;
-  min-height: 330px;
+  height: 330px;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -320,30 +309,28 @@ a {
 
 .feature-item p {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   color: #333333;
-}
-
-.features-1 .feature-item h3 {
-  padding-bottom: 2px;
+  margin-left: 15px;
 }
 
 .features-1 .feature-item:first-child {
   display: block;
   width: 300px;
-  margin-top: 71px;
-  font-size: 18px;
-  line-height: 21px;
+  margin-top: 65px;
+  /*margin-left: 20px;*/
+  font-size: 16px;
+  line-height: 34px;
   color: #000000;
   text-align: center;
 } 
 
 .features-1 .feature-item:nth-child(2) {
   display: block;
-  width: 300px;
+  width: 320px;
   margin-top: 71px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 90px;
+ 
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -354,14 +341,16 @@ a {
   display: block;
   width: 300px;
   margin-top: 71px;
+  margin-left: 100px;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   text-align: center;
 } 
 
-.city-info-2 {
-  /* box-shadow: 12px 2px 30px -2px rgba(0, 1, 1, 0.15); */
+.features-second .feature-item:first-child p {
+  line-height: 1.6;
+  margin-right: 10px;
 }
 
 .city-info-2 h3 {
@@ -389,8 +378,6 @@ a {
   justify-content: center;
   width: 1280px;
   min-height: 257px;
-  /*margin: 0;
-  padding: 0;*/
   background-color: #f2f2f2;
   padding-left: 40px;
   padding-right: 40px;
@@ -454,13 +441,7 @@ a {
   margin-bottom: 20px;
 }
 
-.feature-2-bg {
-  /* box-shadow: -12px 2px 30px -2px rgba(0, 1, 1, 0.15); */
-}
 
-/*.border-shadow {
- box-shadow: 0px 20px 30px -1px rgba(0, 1, 1, 0.15);
-}*/
 
 /*===============Карта и модальное окно================*/
 
@@ -842,9 +823,9 @@ a {
   width: 200px;
   margin: 0;
   padding: 0;
-  padding-left: 58px;
+  padding-left: 57px;
   margin-right: 0px;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
@@ -854,7 +835,7 @@ a {
   display: flex;
   list-style: none;
   width: 200px;
-  padding-right: 28px;
+  /*padding-right: 20px;*/
 }
 
 .footer-socials li {
@@ -914,8 +895,8 @@ a {
 .footer-copyright  {
   display: flex;
   align-items: center;
-  width: 200px;
-  margin-right: 22px;
+  width: 250px;
+  /*margin-right: 10px;*/
 }
 
 .footer-copyright a {
@@ -923,12 +904,21 @@ a {
 }
 
 .footer-copyright b {
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
-  padding: 0;
-  padding-right: 7px;
+  display: block;
+  width: 80px;
+  margin-left: 27px;
+  /*display: flex;
+  align-items: flex-start;*/
+ /* margin: 0;
+  padding: 0;*/
+  /*padding-right: 7px;*/
+  font-size: 12px;
+  font-weight: normal;
 } 
+
+.footer-logo {
+  margin-left: 5px;
+}
 
 
 /* =============Страница Каталога============ */
@@ -1354,13 +1344,13 @@ a {
   margin-left: 72px;
 }
 
-.hotel-list-1 {
+.hotel-list {
   width: 330px;
   margin-top: 10px;
   margin-left: 31px;
 }
 
-.hotel-list-1 h2 {
+.hotel-list h2 {
   margin-top: 15px;
   margin-bottom: 3px;
   font-size: 18px;
@@ -1373,6 +1363,7 @@ a {
 
 .amara-hotel-price {
   margin-left: 34px;
+  font-size: 14px;
 }
 
 .amara-info {
@@ -1432,6 +1423,7 @@ a {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+
 .amara-stars-3 {
   position: absolute;
   top: 15px;
@@ -1442,6 +1434,7 @@ a {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+
 .amara-stars-4 {
   position: absolute;
   top: 15px;
@@ -1468,8 +1461,234 @@ a {
   background-color: #f2f2f2;
 }
 
+.catalog-list-2 {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 151px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.desert-quail-inn-img {
+  margin-top: 30px;
+  margin-left: 72px;
+}
 
+.motel-list {
+  width: 330px;
+  margin-top: 10px;
+  margin-left: 31px;
+}
+
+.motel-list h2 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.motel-desert {
+  font-size: 12px;
+}
+
+.desert-motel-price {
+  margin-left: 61px;
+  font-size: 13px;
+}
+
+.desert-info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.desert-details {
+  margin-top: 12px;
+  margin-left: -1px;
+}
+
+.desert-details a {
+  padding: 6px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.desert-booking {
+  margin-top: 12px;
+}
+
+.desert-booking a {
+  padding: 6px 16px;
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #766357;
+}
+
+.desert-stars-1 {
+  position: absolute;
+  top: 15px;
+  left: 1061px;  
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.desert-stars-2 {
+  position: absolute;
+  top: 15px;
+  left: 1088px;  
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.desert-stars-3 {
+  position: absolute;
+  top: 15px;
+  left: 1110px;  
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.desert-rating {
+  margin: 0;
+  padding: 0;
+  width: 112px;
+  height: 28px;
+  margin-top: 94px;
+  margin-left: 448px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.catalog-list-3 {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 151px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.villas-img {
+  margin-top: 30px;
+  margin-left: 72px;
+}
+
+.apartment-list {
+  width: 330px;
+  margin-top: 10px;
+  margin-left: 31px;
+}
+
+.apartment-list h2 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.apartment-villas {
+  font-size: 12px;
+}
+
+.villas-apartment-price {
+  margin-left: 17px;
+  font-size: 13px;
+}
+
+.villas-info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.villas-details {
+  margin-top: 12px;
+  margin-left: -1px;
+}
+
+.villas-details a {
+  padding: 6px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.villas-booking {
+  margin-top: 12px;
+}
+
+.villas-booking a {
+  padding: 6px 16px;
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #766357;
+}
+
+.villas-stars-1 {
+  position: absolute;
+  top: 15px;
+  left: 1088px;  
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.villas-stars-2 {
+  position: absolute;
+  top: 15px;
+  left: 1110px;  
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/star.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.villas-rating {
+  margin: 0;
+  padding: 0;
+  width: 112px;
+  height: 28px;
+  margin-top: 94px;
+  margin-left: 448px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+}
 
 
 
